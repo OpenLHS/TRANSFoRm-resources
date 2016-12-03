@@ -1,0 +1,899 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY biotop "http://purl.org/biotop/biotop.owl#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY transmed "http://www.w3.org/2001/sw/hcls/ns/transmed/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.transformproject.eu/CDIM/cdim-external.owl#"
+     xml:base="http://www.transformproject.eu/CDIM/cdim-external.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:transmed="http://www.w3.org/2001/sw/hcls/ns/transmed/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:biotop="http://purl.org/biotop/biotop.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.transformproject.eu/CDIM/cdim-externalDerived.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;BFO_0000180">
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000602">
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000232">
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000601">
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;BFO_0000179">
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000121">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has temporal part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000139 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000139">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">temporal part of</rdfs:label>
+        <obo:BFO_0000179>t-part-of</obo:BFO_0000179>
+        <obo:IAO_0000602>(forall (x y) (if (properTemporalPartOf x y) (exists (z) (and (properTemporalPartOf z y) (not (exists (w) (and (temporalPartOf w x) (temporalPartOf w z)))))))) // axiom label in BFO2 CLIF: [117-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(iff (temporalPartOf a b) (and (occurrentPartOf a b) (exists (t) (and (TemporalRegion t) (occupiesSpatioTemporalRegion a t))) (forall (c t_1) (if (and (Occurrent c) (occupiesSpatioTemporalRegion c t_1) (occurrentPartOf t_1 r)) (iff (occurrentPartOf c a) (occurrentPartOf c b)))))) // axiom label in BFO2 CLIF: [078-003] </obo:IAO_0000602>
+        <obo:BFO_0000180>temporalPartOf</obo:BFO_0000180>
+        <obo:IAO_0000602>(iff (properTemporalPartOf a b) (and (temporalPartOf a b) (not (= a b)))) // axiom label in BFO2 CLIF: [116-001] </obo:IAO_0000602>
+        <obo:IAO_0000115 xml:lang="en">b proper_temporal_part_of c =Def. b temporal_part_of c &amp; not (b = c). (axiom label in BFO2 Reference: [116-001])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b temporal_part_of c =Def.b occurrent_part_of c &amp; &amp; for some temporal region t, b occupies_temporal_region t &amp; for all occurrents d, t (if d occupies_temporal_region t  &amp; t? occurrent_part_of t then (d occurrent_part_of a iff d occurrent_part_of b)). (axiom label in BFO2 Reference: [078-003])</obo:IAO_0000115>
+        <obo:IAO_0000601 xml:lang="en">if b proper_temporal_part_of c, then there is some d which is a proper_temporal_part_of c and which shares no parts with b. (axiom label in BFO2 Reference: [117-002])</obo:IAO_0000601>
+        <obo:IAO_0000112 xml:lang="en">the 4th year of your life is a temporal part of your life\. The first quarter of a game of football is a temporal part of the whole game\. The process of your heart beating from 4pm to 5pm today is a temporal part of the entire process of your heart beating.\ The 4th year of your life is a temporal part of your life</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the process boundary which separates the 3rd and 4th years of your life.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating</obo:IAO_0000112>
+        <owl:inverseOf rdf:resource="&obo;BFO_0000121"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000155 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000155">
+        <rdfs:label xml:lang="en">occupies temporal region</rdfs:label>
+        <obo:BFO_0000180>occupiesTemporalRegion</obo:BFO_0000180>
+        <obo:IAO_0000600 xml:lang="en">p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</obo:IAO_0000600>
+        <obo:BFO_0000179>spans</obo:BFO_0000179>
+        <owl:inverseOf rdf:resource="&obo;BFO_0000156"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000156 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000156">
+        <rdfs:label xml:lang="en">has temporal occupant</rdfs:label>
+        <obo:BFO_0000180>spanOf</obo:BFO_0000180>
+        <obo:IAO_0000600>[copied from inverse property &#39;occupies temporal region&#39;] p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects. (axiom label in BFO2 Reference: [132-001])</obo:IAO_0000600>
+        <obo:BFO_0000179>span-of</obo:BFO_0000179>
+        <obo:IAO_0000412 rdf:resource="&obo;bfo.owl"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002223">
+        <rdfs:label xml:lang="en">starts</rdfs:label>
+        <obo:IAO_0000115>inverse of starts with</obo:IAO_0000115>
+        <obo:IAO_0000119>Allen</obo:IAO_0000119>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002224 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002224">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">starts with</rdfs:label>
+        <obo:IAO_0000112>Every insulin receptor signaling pathway starts with the binding of a ligand to the insulin receptor</obo:IAO_0000112>
+        <obo:IAO_0000115>x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: a(y) = a(x) ? ?(y) &lt; ?(x), where a is a function that maps a process to a start point, and ? is a function that maps a process to an end point.</obo:IAO_0000115>
+        <obo:IAO_0000118>started by</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <owl:inverseOf rdf:resource="&obo;RO_0002223"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;has_part"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <obo:IAO_0000116>From Allen terminology</obo:IAO_0000116>
+        <owl:annotatedTarget>started by</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_0002224"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002229">
+        <rdfs:label xml:lang="en">ends</rdfs:label>
+        <obo:IAO_0000115>inverse of ends with</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <owl:inverseOf rdf:resource="&obo;RO_0002230"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002230 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002230">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">ends with</rdfs:label>
+        <obo:IAO_0000118>finished by</obo:IAO_0000118>
+        <obo:IAO_0000115>x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: a(y) &gt; a(x) ? ?(y) = ?(x), where a is a function that maps a process to a start point, and ? is a function that maps a process to an end point.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;has_part"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <obo:IAO_0000116>From Allen terminology</obo:IAO_0000116>
+        <owl:annotatedTarget>finished by</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;RO_0002230"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="&ro;has_part"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_proper_part -->
+
+    <owl:ObjectProperty rdf:about="&ro;has_proper_part"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+
+    <owl:ObjectProperty rdf:about="&ro;part_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009792 -->
+
+    <owl:Class rdf:about="&obo;GO_0009792">
+        <rdfs:label rdf:datatype="&xsd;string">embryo development ending in birth or egg hatching</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009792</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of an embryo over time, from zygote formation until the end of the embryonic life stage. The end of the embryonic life stage is organism-specific and may be somewhat arbitrary; for mammals it is usually considered to be birth, for insects the hatching of the first instar larva from the eggshell.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">embryogenesis</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016265 -->
+
+    <owl:Class rdf:about="&obo;GO_0016265">
+        <rdfs:label rdf:datatype="&xsd;string">death</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A permanent cessation of all vital functions: the end of life; can be applied to a whole organism or to a part of an organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0016265</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the biological process term &#39;apoptosis ; GO:0006915&#39;.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Death</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#gosubset_prok"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000577"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_9606">
+        <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">human being</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000093">
+        <rdfs:label xml:lang="en">patient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">patient</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">patient role</obo:IAO_0000111>
+        <obo:IAO_0000232 xml:lang="en">CDISC definition:  patient. Person under a physician&#39;s care for a particular disease or condition. NOTE: A subject in a clinical trial is not necessarily a patient, but a patient in a clinical trial is a subject. See also subject, trial subject, healthy volunteer. Often used interchangeably</obo:IAO_0000232>
+        <obo:IAO_0000117 xml:lang="en">GROUP:Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">a hospitalized person; a person with controlled diabetes; the patient&#39;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a role which inheres in a person and is realized by the process of being under the care of a physician or health care provider</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000097 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000097">
+        <rdfs:label xml:lang="en">study subject role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">study subject role inheres in an entity and realized through the execution of a study design in which the entity participates by being that which the results are about.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP:  Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">study subject role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000112 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000112">
+        <rdfs:label xml:lang="en">specimen role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">22Jun09.  The definition includes whole organisms, and can include a human.  The link between specimen role and study subject role has been removed.  A specimen taken as part of a case study is not considered to be a population representative, while a specimen taken as representing a population, e.g. person taken from a cohort, blood specimen taken from an animal) would be considered a population representative and would also bear material sample role.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP:  Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">liver section; a portion of a culture of cells; a nemotode or other animal once no longer a subject (generally killed); portion of blood from a patient.</obo:IAO_0000112>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">specimen role</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">a role borne by a material entity that is gained during a specimen creation process and that can be realized by use of the specimen in an investigation</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001141 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001141">
+        <rdfs:label xml:lang="en">individual organism identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">MO_169 Individual</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">a CRID symbol used to distinguish one individual organism from another.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">individual organism identifier</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001616 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001616">
+        <rdfs:label xml:lang="en">specimen identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol denotes a specimen and used to distinguish one specimen from another in an investigation.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Penn Group</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">specimen ID</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">specimen identifier</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="&obo;OBI_0100026">
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &#39;other organisms&#39;)</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000121"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
+
+    <owl:Class rdf:about="&obo;OBI_0100051">
+        <rdfs:label xml:lang="en">specimen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Biobanking of blood taken and stored in a freezer for potential future investigations stores specimen.</obo:IAO_0000112>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Note: definition is in specimen creation objective which is defined as an objective to obtain and store a material entity for potential use as an input during an investigation.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A material entity that has the specimen role.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">specimen</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000047">
+        <rdfs:label xml:lang="en">biological sex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <obo:IAO_0000115 xml:lang="en">An organismal quality inhering in a bearer by virtue of the bearer&#39;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">biological sex</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/biotop/biotop.owl#HealthProfessionalRole -->
+
+    <owl:Class rdf:about="&biotop;HealthProfessionalRole">
+        <rdfs:label xml:lang="en">health professional role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000115 xml:lang="en">The role a human plays as active part in a health system.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">health professional role</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/biotop/biotop.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/biotop/biotop.owl#PhysicianRole -->
+
+    <owl:Class rdf:about="&biotop;PhysicianRole">
+        <rdfs:label xml:lang="en">physician role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&biotop;HealthProfessionalRole"/>
+        <obo:IAO_0000115 xml:lang="en">The role a physician plays.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">physician role</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/biotop/biotop.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/biotop/biotop.owl#ResearcherRole -->
+
+    <owl:Class rdf:about="&biotop;ResearcherRole">
+        <rdfs:label xml:lang="en">researcher role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <obo:IAO_0000115 xml:lang="en">The role a human plays if he / she is involved in research activities.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">researcher role</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/biotop/biotop.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="&snap;MaterialEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="&snap;Quality"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="&snap;Role"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessBoundary -->
+
+    <owl:Class rdf:about="&span;ProcessBoundary"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="&span;ProcessualEntity"/>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0000 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0000">
+        <rdfs:label xml:lang="en">active ingredient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0071"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HL7V3.0:ACTI</oboInOwl:hasDbXref>
+        <dc:description xml:lang="en">An active ingredient is a pharmaceutical ingredient that has the disposition to treat a certain disease.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0001 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0001">
+        <rdfs:label xml:lang="en">formulated pharmaceutical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_proper_part"/>
+                <owl:someValuesFrom rdf:resource="&transmed;TMO_0071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCIt:Pharmaceutical_Formulation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1705957</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>medicare:drugs</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>sider:drugs</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>dailymed:drugs</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pharmgkb:Drug</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:drugs</oboInOwl:hasDbXref>
+        <dc:description xml:lang="en">A formulated pharmaceutical is a chemical substance whose granular parts include an active ingredient, an excipient, and possibly a stability regulator for the active ingredient.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0003 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0003">
+        <rdfs:label xml:lang="en">inactive ingredient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0071"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HL7V3.0:IACT</oboInOwl:hasDbXref>
+        <dc:description xml:lang="en">An inactive ingredient is a pharmaceutical ingredient that is part of a pharmaceutical formulation but does not have the disposition to treat a certain disease.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0034 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0034">
+        <rdfs:label xml:lang="en">molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CHEBI:23367</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GRO:MolecularEntity</oboInOwl:hasDbXref>
+        <dc:description xml:lang="en">Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0037 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0037">
+        <rdfs:label xml:lang="en">gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0215"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:Structural_gene</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GRO:Gene</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Galen:Gene</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">LNC:LP32747-5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D005796</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCIt:Gene</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCIt:Gene_Object</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NDFRT:C242394</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PRO:Gene</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT:67271001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SO:0000704</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0017337</oboInOwl:hasDbXref>
+        <dc:description xml:lang="en">A gene is a part of DNA that encodes information about other molecular entities.</dc:description>
+        <oboInOwl:hasDbXref>diseasome:genes</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pharmgkb:Gene</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0038 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0038">
+        <rdfs:label xml:lang="en">genotype with SNP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D020641</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCIt:Single_Nucleotide_Polymorphism</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SO:0000694</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0752046</oboInOwl:hasDbXref>
+        <dc:description xml:lang="en">A genotype with a single-nucleotide polymorphism (SNP). A SNP is a variation at a single nucleotide locus in the genomes of members of a species. For a variation to be considered a SNP, it must occur in at least 1% of the population.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0039 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0039">
+        <rdfs:label xml:lang="en">genotype with copy number variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SO:0001019</oboInOwl:hasDbXref>
+        <dc:description xml:lang="en">A genotype of which variants with a different number of copies of a sequence identifical region exist.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0063 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0063">
+        <rdfs:label xml:lang="en">chemical substance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_proper_part"/>
+                <owl:someValuesFrom rdf:resource="&transmed;TMO_0034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">A chemical substance is a material entity consisting of many chemical entities and typically has connected boundaries.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0071 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0071">
+        <rdfs:label xml:lang="en">pharmaceutical ingredient</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&transmed;TMO_0063"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&transmed;TMO_0001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0063"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&transmed;TMO_0001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">A pharmaceutical ingredient is a chemical substance that is part of a formulated pharmaceutical that bears a pharmaceutical ingredient role.</dc:description>
+        <oboInOwl:hasDbXref>dailymed:ingredients</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0080 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0080">
+        <rdfs:label xml:lang="en">genotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0228"/>
+        <dc:description xml:lang="en">In this context, a genotype is a material entity made up of two DNA regions on two homologous chromosomes in a diploid cell. One chromosome is derived from the father and one is derived from the mother. The two DNA regions are located at the same genetic locus on each of the two chromosomes.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0083 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0083">
+        <rdfs:label xml:lang="en">ethnicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">ethnicity</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Ethinicity is the quality of an organism that describes membership in a social group based on a common heritage.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0152 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0152">
+        <rdfs:label xml:lang="en">chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0168"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&transmed;TMO_0220"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0156 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0156">
+        <rdfs:label xml:lang="en">dsDNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0168"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0168 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0168">
+        <rdfs:label xml:lang="en">molecular complex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0034"/>
+        <owl:disjointWith rdf:resource="&transmed;TMO_0220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0215 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0215">
+        <rdfs:label xml:lang="en">DNA region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0228"/>
+        <rdfs:comment rdf:datatype="&xsd;string">A DNA region is a part of a DNA molecule that is made up of a continous chain of deoxyribonucleotide residues.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0220 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0220">
+        <rdfs:label xml:lang="en">DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0225 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0225">
+        <rdfs:label xml:lang="en">genotype with indel variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+        <dc:description xml:lang="en">A genotype of which variants exist that differ though an insertion, deletion or a combination thereof.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0226 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0226">
+        <rdfs:label xml:lang="en">genotype with short tandem repeat variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0227 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0227">
+        <rdfs:label xml:lang="en">genotype with multiple nucleotide polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+        <dc:description xml:lang="en">A genotype with a multiple-nucleotide polymorphism (MNP). An MNP is a variation of several adjacent nucleotides in the genomes of members of a species. For a variation to be considered an MNP, it must occur in at least 1% of the population.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0228 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0228">
+        <rdfs:label xml:lang="en">molecular entity part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&transmed;TMO_0034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string">A part of a molecular entity or a set of molecular entities. It can be made up of several non-connected sub-parts, potentially on separate molecular entities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0229 -->
+
+    <owl:Class rdf:about="&transmed;TMO_0229">
+        <rdfs:label xml:lang="en">genotype with allele </rdfs:label>
+        <rdfs:subClassOf rdf:resource="&transmed;TMO_0080"/>
+        <dc:description xml:lang="en">A genotype containing one matching allele on each chromosome (e.g., CYP2C9*1/*3)</dc:description>
+    </owl:Class>
+	
+	<owl:Class rdf:about="http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0062">
+    <dc:description xml:lang="en">A pharmaceutical ingredient role is a role played by a chemical substance that is part of a pharmaceutical formulation.</dc:description>
+    <rdfs:subClassOf rdf:resource="&snap;Role"/>
+    <rdfs:label xml:lang="en">pharmaceutical ingredient role</rdfs:label>
+  </owl:Class>
+	
+	<owl:Class rdf:about="http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0064">
+    <dc:description xml:lang="en">An active ingredient role is a role played by a chemical substance which has the disposition to treat a certain disease and is part of a pharmaceutical formulation.</dc:description>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0062"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">active ingredient role</rdfs:label>
+  </owl:Class>
+  
+  <owl:Class rdf:about="http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0065">
+    <dc:description xml:lang="en">An inactive ingredient role is a role played by a chemical substance which is part of a pharmaceutical formulation but does not have the disposition to treat a certain disease.</dc:description>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0062"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">inactive ingredient role</rdfs:label>
+  </owl:Class>
+  
+  
+	
+	
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

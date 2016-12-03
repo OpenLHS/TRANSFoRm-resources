@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY GO "http://purl.org/obo/owl/GO#" >
+    <!ENTITY rotoo "http://purl.org/obo/owl/ro#" >
+    <!ENTITY FMA "http://purl.org/obo/owl/FMA#" >
+    <!ENTITY PATO "http://purl.org/obo/owl/PATO#" >
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
+    <!ENTITY robfo "http://purl.org/obo/owl/ro_bfo_bridge/1.1#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY protege-dc "http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://vital-sign-ontology.googlecode.com/releases/2011-9-13/vso-external-derived.owl#"
+     xml:base="http://vital-sign-ontology.googlecode.com/releases/2011-9-13/vso-external-derived.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:PATO="http://purl.org/obo/owl/PATO#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:FMA="http://purl.org/obo/owl/FMA#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:rotoo="http://purl.org/obo/owl/ro#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
+     xmlns:GO="http://purl.org/obo/owl/GO#">
+    <owl:Ontology rdf:about="http://vital-sign-ontology.googlecode.com/releases/2011-9-13/vso-external-derived.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000027">
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000111>data item</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000109">
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000111>measurement datum</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000011">
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000111>planned process</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000024">
+        <rdfs:label xml:lang="en">sign</rdfs:label>
+        <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in that is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
+        <obo:IAO_0000111>sign</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000029 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000029">
+        <rdfs:label xml:lang="en">vital sign</rdfs:label>
+        <obo:IAO_0000111>vital sign</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical sign in which a non-zero value is standardly considered to be an indication that the organism is alive.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_14160 -->
+
+    <owl:Class rdf:about="&FMA;FMA_14160">
+        <rdfs:label xml:lang="en">Wall of superior vena cava</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_67473"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_14161 -->
+
+    <owl:Class rdf:about="&FMA;FMA_14161">
+        <rdfs:label xml:lang="en">Wall of inferior vena cava</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_67473"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_14598 -->
+
+    <owl:Class rdf:about="&FMA;FMA_14598">
+        <rdfs:label xml:lang="en">Lumen of rectum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_18211 -->
+
+    <owl:Class rdf:about="&FMA;FMA_18211">
+        <rdfs:label xml:lang="en">Wall of pulmonary artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_67473"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_19982 -->
+
+    <owl:Class rdf:about="&FMA;FMA_19982">
+        <rdfs:label xml:lang="en">Lumen of vagina</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_20292 -->
+
+    <owl:Class rdf:about="&FMA;FMA_20292">
+        <rdfs:label xml:lang="en">Oral cavity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_20394 -->
+
+    <owl:Class rdf:about="&FMA;FMA_20394">
+        <rdfs:label xml:lang="en">Human body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+        <obo:IAO_0000115>Anatomical structure which is the aggregate material substance of an individual member of the human species.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_22689 -->
+
+    <owl:Class rdf:about="&FMA;FMA_22689">
+        <rdfs:label xml:lang="en">Brachial artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_22730 -->
+
+    <owl:Class rdf:about="&FMA;FMA_22730">
+        <rdfs:label xml:lang="en">Radial artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_22796 -->
+
+    <owl:Class rdf:about="&FMA;FMA_22796">
+        <rdfs:label xml:lang="en">Ulnar artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_3939 -->
+
+    <owl:Class rdf:about="&FMA;FMA_3939">
+        <rdfs:label xml:lang="en">Common carotid artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_43895 -->
+
+    <owl:Class rdf:about="&FMA;FMA_43895">
+        <rdfs:label xml:lang="en">Posterior tibial artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_43915 -->
+
+    <owl:Class rdf:about="&FMA;FMA_43915">
+        <rdfs:label xml:lang="en">Dorsalis pedis artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_49549 -->
+
+    <owl:Class rdf:about="&FMA;FMA_49549">
+        <rdfs:label xml:lang="en">Facial artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_49650 -->
+
+    <owl:Class rdf:about="&FMA;FMA_49650">
+        <rdfs:label xml:lang="en">Superficial temporal artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_50720 -->
+
+    <owl:Class rdf:about="&FMA;FMA_50720">
+        <rdfs:label xml:lang="en">Artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+        <obo:IAO_0000115>Subdivision of arterial tree (organ) which consists of branching sets of tubes (arterial trunk) that form a tree; together with other arterial trees (organ part), it constitutes an arterial tree (organ).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_61464 -->
+
+    <owl:Class rdf:about="&FMA;FMA_61464">
+        <rdfs:label xml:lang="en">Axillary fossa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_61734 -->
+
+    <owl:Class rdf:about="&FMA;FMA_61734">
+        <rdfs:label xml:lang="en">External acoustic tube</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_62955 -->
+
+    <owl:Class rdf:about="&FMA;FMA_62955">
+        <rdfs:label xml:lang="en">Anatomical entity</rdfs:label>
+        <obo:IAO_0000115>Organismal continuant entity which is enclose\
+d by the bona fide boundary of an organism or is an attribute of its structural\
+ organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, an\
+atomical term, sagittal plane.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_67473 -->
+
+    <owl:Class rdf:about="&FMA;FMA_67473">
+        <rdfs:label xml:lang="en">Wall of blood vessel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_70248 -->
+
+    <owl:Class rdf:about="&FMA;FMA_70248">
+        <rdfs:label xml:lang="en">Femoral artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_77155 -->
+
+    <owl:Class rdf:about="&FMA;FMA_77155">
+        <rdfs:label xml:lang="en">Popliteal artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_50720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_9533 -->
+
+    <owl:Class rdf:about="&FMA;FMA_9533">
+        <rdfs:label xml:lang="en">Wall of right ventricle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_67473"/>
+        <obo:IAO_0000115>Wall of ventricle which is continuous with the wall of pulmonary trunk.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_9556 -->
+
+    <owl:Class rdf:about="&FMA;FMA_9556">
+        <rdfs:label xml:lang="en">Wall of left ventricle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_67473"/>
+        <obo:IAO_0000115>Wall of ventricle which is continuous with the wall of aorta.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/FMA#FMA_9670 -->
+
+    <owl:Class rdf:about="&FMA;FMA_9670">
+        <rdfs:label xml:lang="en">Portion of blood</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&FMA;FMA_62955"/>
+        <obo:IAO_0000115>Portion of body substance which consists of plasma and blood cells.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0001659 -->
+
+    <owl:Class rdf:about="&GO;GO_0001659">
+        <rdfs:label xml:lang="en">regulation of temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&GO;GO_0065008"/>
+        <obo:IAO_0000115>A homeostatic process in which an organism modulates its internal body temperature.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0002027 -->
+
+    <owl:Class rdf:about="&GO;GO_0002027">
+        <rdfs:label xml:lang="en">regulation of heart rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&GO;GO_0065008"/>
+        <obo:IAO_0000115>Any process that modulates the frequency or rate of heart contraction.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0008015 -->
+
+    <owl:Class rdf:about="&GO;GO_0008015">
+        <rdfs:label xml:lang="en">blood circulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000115>The flow of blood through the body of an animal, enabling the transport of nutrients to the tissues and the removal of waste products.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0008217 -->
+
+    <owl:Class rdf:about="&GO;GO_0008217">
+        <rdfs:label xml:lang="en">regulation of blood pressure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&GO;GO_0065008"/>
+        <obo:IAO_0000115>Any process that modulates the force with which blood travels through the circulatory system. The process is controlled by a balance of processes that increase pressure and decrease pressure.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#GO_0065008 -->
+
+    <owl:Class rdf:about="&GO;GO_0065008">
+        <rdfs:label xml:lang="en">regulation of biological quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of a biological quality. A biological quality is a measurable attribute of an organism or part of an organism, such as size, mass, shape, color, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/PATO#PATO_0000146 -->
+
+    <owl:Class rdf:about="&PATO;PATO_0000146">
+        <rdfs:label xml:lang="en">temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <obo:IAO_0000115>A physical quality of the thermal energy of a system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/PATO#PATO_0000161 -->
+
+    <owl:Class rdf:about="&PATO;PATO_0000161">
+        <rdfs:label xml:lang="en">rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <obo:IAO_0000115>A quality of a single process inhering in a bearer by virtue of the bearer&#39;s occurrence per unit time.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/PATO#PATO_0001025 -->
+
+    <owl:Class rdf:about="&PATO;PATO_0001025">
+        <rdfs:label xml:lang="en">pressure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <obo:IAO_0000115>A physical quality that inheres in a bearer by virtue of the bearer&#39;s amount of force per unit area it exerts.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="&snap;Quality"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="&span;ProcessualEntity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

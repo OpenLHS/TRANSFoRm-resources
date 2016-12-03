@@ -1,0 +1,1706 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY obo2 "http://purl.org/obo/" >
+    <!ENTITY PATO "http://purl.org/obo/owl/PATO#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY biotop "http://purl.org/biotop/biotop.owl#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY transmed "http://www.w3.org/2001/sw/hcls/ns/transmed/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.transformproject.eu/CDIM/cdim.owl#"
+     xml:base="http://www.transformproject.eu/CDIM/cdim.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:transmed="http://www.w3.org/2001/sw/hcls/ns/transmed/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:OBO_REL="&obo2;owl/OBO_REL#"
+     xmlns:PATO="&obo2;owl/PATO#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:biotop="http://purl.org/biotop/biotop.owl#"
+     xmlns:obo2="http://purl.org/obo/"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.transformproject.eu/CDIM/cdim.owl">
+        <owl:imports rdf:resource="&obo;ogms.owl"/>
+        <owl:imports rdf:resource="&obo;vso.owl"/>
+        <owl:imports rdf:resource="&obo;iao/dev/iao.owl"/>
+        <owl:imports rdf:resource="http://www.transformproject.eu/CDIM/cdim-external.owl"/>
+        <owl:versionIRI rdf:resource="http://www.transformproject.eu/CDIM/cdim2"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#has_role -->
+
+    <rdf:Description rdf:about="&obo2;owl/OBO_REL#has_role">
+        <rdfs:subPropertyOf rdf:resource="&obo2;owl/OBO_REL#bearer_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000036 -->
+
+    <owl:ObjectProperty rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000036">
+        <rdfs:label xml:lang="en">has measurement numeral</rdfs:label>
+        <rdfs:range rdf:resource="&obo;IAO_0000029"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;has_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009792 -->
+
+    <rdf:Description rdf:about="&obo;GO_0009792">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000577">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000578"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001141 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0001141">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001616 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0001616">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBI_0100051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0100051">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000112"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000031">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#inheres_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000056 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000056">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000063 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000063">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#realizes"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000097">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000104 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000104">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000096"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000005 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000005">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000077"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000006 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000006">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000008 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000008">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000077"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000009 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000009">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000030 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000030">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000077"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000031 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000031">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000035 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000035">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000077"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000036 -->
+
+    <rdf:Description rdf:about="&obo;VSO_0000036">
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000001 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000001">
+        <rdfs:label xml:lang="en">patient</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000093"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000002 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000002">
+        <rdfs:label xml:lang="en">individual organism CRID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000003 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000003">
+        <rdfs:label xml:lang="en">patient CRID symbol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000004 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000004">
+        <rdfs:label xml:lang="en">birth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000005 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000005">
+        <rdfs:label xml:lang="en">human intra-uterine life course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009792"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_participant"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000006 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000006">
+        <rdfs:label xml:lang="en">human extra-uterine life course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessualEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;preceded_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_participant"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000007 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000007">
+        <rdfs:label xml:lang="en">human birth instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000033"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000008 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000008">
+        <rdfs:label xml:lang="en">human death instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000034"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000009 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000009">
+        <rdfs:label>physician</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000013"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&biotop;PhysicianRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000011 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000011">
+        <rdfs:label xml:lang="en">diagnostic conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000012 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000012">
+        <rdfs:label xml:lang="en">diagnostic conclusion instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000011"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000013 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000013">
+        <rdfs:label xml:lang="en">health care professional</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&biotop;HealthProfessionalRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000014 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000014">
+        <rdfs:label xml:lang="en">researcher</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&biotop;ResearcherRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000016 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000016">
+        <rdfs:label xml:lang="en">return to normal homeostasis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#realizes"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000017 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000017">
+        <rdfs:label xml:lang="en">return to normal homeostasis instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000016"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000018 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000018">
+        <rdfs:label xml:lang="en">patient CRID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:allValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000019 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000019">
+        <rdfs:label xml:lang="en">human life course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000092"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_participant"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000020 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000020">
+        <rdfs:label xml:lang="en">study subject</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000097"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_9606"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000021 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000021">
+        <rdfs:label xml:lang="en">past status diagnostic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000104"/>
+        <obo:IAO_0000117 xml:lang="en">A diagnostic process which aims at establishing a diagnosis regarding the presence or absence of disease at point in time anterior to  the diagnostic process.</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000022 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000022">
+        <rdfs:label xml:lang="en">current status diagnostic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000104"/>
+        <obo:IAO_0000117 xml:lang="en">A diagnostic process which aims at establishing a diagnosis regarding the presence or absence of disease a at point in time during the diagnostic process.</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000023 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000023">
+        <rdfs:label xml:lang="en">disease course instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000063"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000024 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000024">
+        <rdfs:label xml:lang="en">laboratory test ordering instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000025"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000025 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000025">
+        <rdfs:label xml:lang="en">laboratory test ordering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000026 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000026">
+        <rdfs:label xml:lang="en">specimen creation confirmation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_participant"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000027 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000027">
+        <rdfs:label xml:lang="en">specimen creation confirmation instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000026"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000028 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000028">
+        <rdfs:label xml:lang="en">laboratory test result confirmation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000029 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000029">
+        <rdfs:label xml:lang="en">laboratory test result confirmation instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000028"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000030 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000030">
+        <rdfs:label xml:lang="en">lower bound of normal value range</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000074"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000031 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000031">
+        <rdfs:label xml:lang="en">upper bound of normal value range</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000074"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000032 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000032">
+        <rdfs:label xml:lang="en">scalar measurement datum laboratory finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000036"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000029"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000003"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000033 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000033">
+        <rdfs:label xml:lang="en">human birth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000034 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000034">
+        <rdfs:label xml:lang="en">human death</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0016265"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000155"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000035 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000035">
+        <rdfs:label xml:lang="en">atomic normal value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000074"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000037 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000037">
+        <rdfs:label xml:lang="en">formulated pharmaceutical data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000038 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000038">
+        <rdfs:label xml:lang="en">strength data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000049"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000036"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000039 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000039">
+        <rdfs:label xml:lang="en">dose form data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000040 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000040">
+        <rdfs:label xml:lang="en">active ingredient data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000041 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000041">
+        <rdfs:label xml:lang="en">formulated pharmaceutical category data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000042 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000042">
+        <rdfs:label xml:lang="en">health care instruction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000043 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000043">
+        <rdfs:label xml:lang="en">formulated pharmaceutical instruction item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000040"/>
+                            <rdf:Description rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000051"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000044 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000044">
+        <rdfs:label xml:lang="en">health care instruction item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000045 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000045">
+        <rdfs:label xml:lang="en">written creation date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000046 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000046">
+        <rdfs:label xml:lang="en">health care prescription</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000310"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000047 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000047">
+        <rdfs:label xml:lang="en">health care professional author identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000302"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                <owl:onClass rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000013"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000048 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000048">
+        <rdfs:label xml:lang="en">patient identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000590"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                <owl:onClass rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000001"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000049 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000049">
+        <rdfs:label xml:lang="en">atomic formulated pharmaceutical data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000050 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000050">
+        <rdfs:label xml:lang="en">composite formulated pharmaceutical data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000051 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000051">
+        <rdfs:label xml:lang="en">brand name data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052">
+        <rdfs:label xml:lang="en">posological information item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000059"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000053 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000053">
+        <rdfs:label xml:lang="en">total dose per administration item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000054 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000054">
+        <rdfs:label xml:lang="en">number of formulated pharmaceutical unit per administration item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000055 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000055">
+        <rdfs:label xml:lang="en">mode of administration item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000056 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000056">
+        <rdfs:label xml:lang="en">administration frequency item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000057 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000057">
+        <rdfs:label xml:lang="en">total of formulated pharmaceutical unit per treatment period item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000058 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000058">
+        <rdfs:label xml:lang="en">duration of treatment period item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000059 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000059">
+        <rdfs:label xml:lang="en">directive information entity part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000060 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000060">
+        <rdfs:label xml:lang="en">vital sign measurement process</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000077"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000061 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000061">
+        <rdfs:label xml:lang="en">vital sign measurement process instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000060"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000062 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000062">
+        <rdfs:label xml:lang="en">blood pressure measurement process instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000061"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000006"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000063 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000063">
+        <rdfs:label xml:lang="en">body temperature measurement process instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000061"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000009"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000064 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000064">
+        <rdfs:label xml:lang="en">pulse rate measurement process instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000061"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000031"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000065 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000065">
+        <rdfs:label xml:lang="en">respiratory rate measurement process instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000061"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000036"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000066 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000066">
+        <rdfs:label xml:lang="en">human mass measurement process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000067 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000067">
+        <rdfs:label xml:lang="en">human mass measurement process instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000066"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000068 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000068">
+        <rdfs:label xml:lang="en">human mass measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000003"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000036"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000029"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000069 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000069">
+        <rdfs:label xml:lang="en">human height measurement process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000070 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000070">
+        <rdfs:label xml:lang="en">human height measurement process instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000069"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000071 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000071">
+        <rdfs:label xml:lang="en">human height measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000003"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000036"/>
+                <owl:onClass rdf:resource="&obo;IAO_0000029"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000073 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000073">
+        <rdfs:label xml:lang="en">systolic blood pressure measurement datum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000038"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;VSO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000074 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000074">
+        <rdfs:label xml:lang="en">diastolic blood pressure measurement datum</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000015"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;VSO_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000075 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000075">
+        <rdfs:label xml:lang="en">human mass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;owl/PATO#PATO_0000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#inheres_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Altough mass and weight formally designate different (yet related) concepts, when clinicans refer to weight, they do refer to the mass of the patient, not its weight in newton.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000076 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000076">
+        <rdfs:label xml:lang="en">human height</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo2;owl/PATO#PATO_0000122"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#inheres_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000077 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000077">
+        <rdfs:label xml:lang="en">vital sign measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000078 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000078">
+        <rdfs:label xml:lang="en">reason for encounter role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000079 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000079">
+        <rdfs:label xml:lang="en">health care encounter instant</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&span;TemporalInstant"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000156"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&span;ProcessualEntity"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000139"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000097"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&span;TemporalInstant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000080 -->
+
+    <owl:Class rdf:about="http://www.transformproject.eu/CDIM/cdim.owl#CDIM_000080">
+        <rdfs:label xml:lang="en">health care episode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0000 -->
+
+    <rdf:Description rdf:about="&transmed;TMO_0000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&transmed;TMO_0071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&transmed;TMO_0064"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&transmed;TMO_0001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2001/sw/hcls/ns/transmed/TMO_0003 -->
+
+    <rdf:Description rdf:about="&transmed;TMO_0003">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&transmed;TMO_0071"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo2;owl/OBO_REL#has_role"/>
+                        <owl:someValuesFrom rdf:resource="&transmed;TMO_0065"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ro;part_of"/>
+                        <owl:someValuesFrom rdf:resource="&transmed;TMO_0001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="obsolete.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="externalByHand.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="external.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.obofoundry.org/ro/ro_bfo_bridge.owl" uri="ro_bfo_bridge.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.obofoundry.org/ro/ro.owl" uri="ro.owl"/>
+    <uri id="User Entered Import Resolution" name="http://vital-sign-ontology.googlecode.com/svn/releases/2011-9-13/vso-external.owl" uri="vso-external.owl"/>
+    <uri id="User Entered Import Resolution" name="http://vital-sign-ontology.googlecode.com/svn/releases/2011-9-13/vso-external-derived.owl" uri="vso-external-derived.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.ifomis.org/bfo/1.1" uri="1.1"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+    <uri id="User Entered Import Resolution" name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="protege-dc.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.transformproject.eu/CDIM/cdim.owl" uri="cdim-external.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/vso.owl" uri="vso.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogms.owl" uri="ogms.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="IAO.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="duplicate:http://purl.obolibrary.org/obo/" uri="external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="duplicate:http://purl.obolibrary.org/obo/" uri="externalByHand.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="duplicate:http://purl.obolibrary.org/obo/" uri="obsolete.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="duplicate:http://purl.obolibrary.org/obo/VSO" uri="vso-external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="duplicate:http://purl.obolibrary.org/obo/VSO" uri="vso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="externalDerived.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="iao-main.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="IAO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://purl.obolibrary.org/obo/ogms.owl" uri="ogms.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://purl.org/dc/elements/1.1/" uri="protege-dc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="duplicate:http://purl.org/obo/owl/" uri="ro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="duplicate:http://purl.org/obo/owl/" uri="ro_bfo_bridge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://vital-sign-ontology.googlecode.com/releases/2011-9-13/vso-external-derived.owl" uri="vso-external-derived.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://www.transformproject.eu/CDIM/cdim-external.owl" uri="cdim-external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1480735862966" name="http://www.transformproject.eu/CDIM/cdim.owl" uri="cdim.owl"/>
+    </group>
+</catalog>
